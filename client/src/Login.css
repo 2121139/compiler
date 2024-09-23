@@ -1,0 +1,66 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+.bg-secondary {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient or background image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff; /* White background for the form container */
+  padding: 2rem; /* Padding around the form */
+  border-radius: 0.5rem; /* Rounded corners for the form container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for form container */
+  width: 100%;
+  max-width: 400px; /* Maximum width for the form */
+}
+
+input, button {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+input:focus, button:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #0094ff);
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

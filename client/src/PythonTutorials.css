@@ -1,0 +1,40 @@
+/* Style for the container of the tutorials */
+.tutorials-container {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+/* Style for the title */
+.tutorials-container h1 {
+  color: #000000; /* Black color for the main title */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of tutorials */
+.tutorials-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for each tutorial item */
+.tutorial-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for each tutorial */
+}
+
+/* Style for the title within each tutorial item */
+.tutorial-item h2 {
+  color: #000000; /* Black color for tutorial titles */
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* Style for the content within each tutorial item */
+.tutorial-item p {
+  color: #000000; /* Black color for tutorial content */
+  font-size: 1rem;
+}

@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero section */
+.hero-section {
+  width: 100%;
+  padding: 150px 20px;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button Styles */
+.primary-button, .secondary-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-button {
+  background-color: #4a00e0;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #3700b3;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #4a00e0;
+  padding: 12px 24px;
+  border: 2px solid #4a00e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #4a00e0;
+  color: white;
+}
+
+/* Features section */
+.features-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color:  #4a00e0;
+}
+
+/* Tutorials section */
+.tutorials-section {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tutorials-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #4a00e0;
+}
+
+/* Paragraph text color in the tutorials section */
+.tutorials-section p {
+  color: black;
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #4a00e0;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #4a00e0;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* About Us Section */
+.about-section {
+  width: 100%;
+  padding: 60px 20px; /* Maintain padding size */
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Increase gap for emphasis */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 2.8rem; /* Increased font size for emphasis */
+  margin-bottom: 15px;
+  color: #4a00e0;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: 1.2rem; /* Increased font size for readability */
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Adjusted shadow for impact */
+}

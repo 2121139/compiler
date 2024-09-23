@@ -1,0 +1,45 @@
+.problem {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+
+  /* styles.css */
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center content */
+.container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style problem buttons */
+.problem-button {
+  display: block;
+  width: 100%;
+  max-width: 300px; /* Limit width of buttons */
+  margin: 10px auto; /* Spacing around each button */
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.problem-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Optional: Add spacing between buttons */
+.problem-button + .problem-button {
+  margin-top: 15px;
+}

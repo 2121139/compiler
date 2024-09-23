@@ -1,0 +1,110 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base Styles for the Navbar */
+.navbar {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient background similar to hero section */
+    color: #ffffff; /* White text */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect similar to hero section */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Logo Styles */
+.navbar-logo a {
+    color: #ffffff; /* White text for the logo */
+    font-size: 1.8em; /* Larger font size for the logo */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-logo a:hover {
+    color: #f4f6f9; /* Light background color from the homepage on hover */
+}
+
+.navbar-logo i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Navbar Links Styles */
+.navbar-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links a {
+    color: #ffffff; /* White text for the links */
+    text-decoration: none;
+    font-size: 1.2em; /* Font size for links */
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a:hover {
+    background-color: #3700b3; /* Darker gradient-like effect on hover */
+    color: #f4f6f9; /* Light background color from the homepage on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.navbar-links .fa {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* User Section Styles */
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button, .login-button {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Gradient background with inverted direction */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger font size for buttons */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    display: flex;
+    align-items: center;
+}
+
+.logout-button:hover, .login-button:hover {
+    background: linear-gradient(135deg, #3700b3, #4a00e0); /* Darker gradient on hover */
+    color: #f4f6f9; /* Light background color from the homepage on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
