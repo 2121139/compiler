@@ -16,14 +16,14 @@ const Codes = require('./models/Code.js')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const DB_CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/compilerapp";
+// const DB_CONNECTION_STRING = process.env.DB_CONNECTION_STRING || "mongodb://127.0.0.1:27017/compilerapp";
 
-mongoose.connect(DB_CONNECTION_STRING, {  
-}).then(() => {
-  console.log("MongoDB connected successfully");
-}).catch((error) => {
-  console.error("Error connecting to MongoDB:", error);
-});
+// mongoose.connect(DB_CONNECTION_STRING, {  
+// }).then(() => {
+//   console.log("MongoDB connected successfully");
+// }).catch((error) => {
+//   console.error("Error connecting to MongoDB:", error);
+// });
 
 app.use(cors({
   origin: ["https://compiler-apis.vercel.app/"],
