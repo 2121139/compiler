@@ -26,7 +26,7 @@ mongoose.connect(DB_CONNECTION_STRING, {
 });
 
 app.use(cors({
-  origin: ["https://compiler-apis.vercel.app/"],
+  origin: ["https://compiler-apis.vercel.app"],
   methods: ["GET", "POST"],
   credentials: true
 }));
