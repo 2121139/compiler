@@ -35,6 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookierParser())
 
+mongoose.connect('mongodb+srv://takkeraman1305:secret123@compilercluster.gc1a2.mongodb.net/?retryWrites=true&w=majority&appName=compilercluster');
 
 const verifyUser = (req, res, next) => {
   const token = req.cookies.token;
