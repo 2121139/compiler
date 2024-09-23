@@ -13,15 +13,16 @@ import CompilerCodePage from './CompilerCodePage';
 import ProblemPage from './ProblemPage'
 import PythonTutorials from './PythonTutorials';
 import CppTutorials from './CppTutorials';
+import axios from 'axios';
 
 function App() {
    const [codeHistory, setCodeHistory] = useState([]); 
-   const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
       e.preventDefault();
       axios.post('https://compiler-apis.vercel.app/')
-      .then(result => console.log(result));
+      .then(result => console.log(result))
       .catch(err => console.log(err));
-}
+   };
 
   return (
     <Router>
