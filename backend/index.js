@@ -49,6 +49,10 @@ const verifyUser = (req, res, next) => {
   }
 }
 
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the Compiler API!'); // Or you can send an HTML file or any other response you prefer
+});
 app.get('/compiler', verifyUser, (req, res) => {
       return res.json("Success")
 })
