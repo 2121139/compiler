@@ -17,9 +17,13 @@ import axios from 'axios';
 
 function App() {
    const [codeHistory, setCodeHistory] = useState([]); 
+   const [name, setName] = useState();
+   const [email, setEmail] = useState();
+   const [password, setPassword] = useState();
+   axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
       e.preventDefault();
-      axios.post('https://compiler-apis.vercel.app/')
+      axios.post('https://compiler-apis.vercel.app/register', {name, email, password})
       .then(result => console.log(result))
       .catch(err => console.log(err));
    };
